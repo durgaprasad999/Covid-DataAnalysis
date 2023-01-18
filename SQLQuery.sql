@@ -22,7 +22,7 @@ from AnalystProject.dbo.CovidDeaths
 --where location like 'india'
 order by 1,2
 
---countries with highest infection rate w.r.t population
+--countries with highest infection rate with respect to population
 select location, population, max(total_cases) as Highinfectioncount, max((total_cases/population))*100 as Percentpeopleinfected
 from AnalystProject.dbo.CovidDeaths
 --where location like 'india'
